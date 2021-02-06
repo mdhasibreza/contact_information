@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form_body">
+      <header>
+        <div>
+          <h1>Contact Form</h1>
+          <p>Required fields are followed by *</p>
+        </div>
+      </header>
+      <main>
+        <form action="">
+          <p>
+            your name:
+            <br /><input
+              type="text"
+              name="name"
+              placeholder="your full name *"
+              required
+            />
+          </p>
+          <p>
+            email address:
+            <br /><input
+              type="email"
+              name="email"
+              placeholder="your email address *"
+              required
+            />
+          </p>
+          <p>
+            message:
+            <br /><textarea
+              name="message"
+              id="message"
+              name="message"
+              placeholder="message to us"
+            ></textarea>
+          </p>
+          <p>
+            subject:
+            <br />
+            <select name="subject" id="subject">
+              <option value="--select a option--">--select a option--</option>
+              <option value="job_inq">job inquery</option>
+              <option value="job_inq">current openings</option>
+              <option value="job_inq">consumer support</option>
+            </select>
+          </p>
+          <input type="submit" value="send" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
